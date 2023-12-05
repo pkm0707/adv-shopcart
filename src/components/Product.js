@@ -10,10 +10,10 @@ export const Product = (props) => {
       <div className="product">
         <img src={images} alt={title}/>
         <div className="description">
-          <p style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center"}}>
+          <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center"}}>
             <b>{title}</b>
             <p>⭐{rating}</p>
-          </p>
+          </div>
           <p>Discount : {discountPercentage}% </p>
           <p>Rs.{price}</p>
           <p style={{fontSize:"15px"}}>Discription : {description}</p>

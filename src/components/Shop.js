@@ -7,12 +7,12 @@ export const Shop = () => {
       <div className="shop">
         <div className="shopTitle">
           <LinearProgress color="secondary" />
-          <h2>MRM Cart</h2>
+          <h2>GUVI Cart</h2>
           <LinearProgress color="inherit" />
         </div>
         <div className="products">
-          {products.map((product) => (
-            <Product data={product} />
+          {products.map((product,index) => (
+            <Product data={product} key={index}/>
           ))}
         </div>
       </div>
